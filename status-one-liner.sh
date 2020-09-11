@@ -2,6 +2,13 @@
 
 MODULES=$(dirname $0)/modules
 
-show_index=1
+active_modules=$(echo "$1" | tr ',' '\n')
 
-cat <(cat <($MODULES/calendar/summary.sh) <($MODULES/calendar/upcoming.sh) <($MODULES/notification.sh) <($MODULES/pomodoro.sh) | grep -v '^$' | tail -n $show_index) <(echo "") | head -n1
+function execute_modules() {
+	for module_name in $active_modules
+	do
+		cat <($MODULES/$module_name.sh)
+	done
+}
+
+execute_modules | grep -v '^$' | head -n1

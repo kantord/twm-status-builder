@@ -79,3 +79,5 @@ do
 	fi
 	day_summary="$day_summary$time_symbol"
 done
+
+echo $day_summary
