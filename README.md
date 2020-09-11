@@ -2,6 +2,8 @@
 
 ![screenshot](screenshot.png)
 
+See (only) the most relevant information in your status bar.
+
 ## Usage
 
 ```
