@@ -1,5 +1,7 @@
 # status-one-liner
 
+![screenshot](screenshot.png)
+
 ## Usage
 
 ```
