@@ -14,13 +14,13 @@ meeting will be represented with `📅`, even if the meeting starts in the middl
 hour block.
 
 Legend:
- * 🚀 - Current time
- * ⏰ - Wake up time
- * 💤 - Sleep time
- * 🟩 - Free time
- * 🟦 - Work time
- * 📅 - Meetings and calendar events
- * 🍴 - Lunch break
+ * `🚀` - Current time
+ * `⏰` - Wake up time
+ * `💤` - Sleep time
+ * `🟩` - Free time
+ * `🟦` - Work time
+ * `📅` - Meetings and calendar events
+ * `🍴` - Lunch break
 
 *output example*:
 
