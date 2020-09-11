@@ -17,6 +17,17 @@ See the documentation for each module to see the required configuration.
 
 List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro)
 
+### Usage with polybar
+
+Example:
+
+```
+[module/status_one_liner]
+type = custom/script
+exec = status-one-liner.sh pomodoro,calendar/upcoming,calendar/summary
+interval = 0.5
+```
+
 ## Modules
 
 ### Calendar
