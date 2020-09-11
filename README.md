@@ -39,3 +39,21 @@ Provides a summary of ongoing and up
 **output example**:
 
 `📅 In 51m: Dev standup`
+
+
+### Pomodoro
+
+**module name**: `pomodoro`
+
+If you use the Pomodoro technique, you might want to hide your other information
+and instead see your Pomodoro status. The `pomodoro` module lets you do that using
+[i3-gnome-pomodoro](https://github.com/kantord/i3-gnome-pomodoro).
+
+In order to use this module, please set up
+[i3-gnome-pomodoro](https://github.com/kantord/i3-gnome-pomodoro) first.
+
+**output example**:
+
+`🍅 Pomodoro 23:47`
+
+
