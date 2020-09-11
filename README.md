@@ -15,6 +15,7 @@ a non-empty output will be displayed. Example:
 
 See the documentation for each module to see the required configuration.
 
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro)
 
 ## Modules
 
