@@ -1,5 +1,21 @@
 # status-one-liner
 
+## Usage
+
+```
+./status-one-liner.sh [modules]
+```
+
+You have to supply a comma-separated list of modules to display. To first module to have
+a non-empty output will be displayed. Example:
+
+```
+./status-one-liner.sh pomodoro,calendar/upcoming,calendar/summary
+```
+
+See the documentation for each module to see the required configuration.
+
+
 ## Modules
 
 ### Calendar
