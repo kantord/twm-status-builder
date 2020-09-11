@@ -1,8 +1,10 @@
-# Calendar
+# status-one-liner
 
 ## Calendar
 
-The calendar modules rely on `khal` for data.
+The calendar modules rely on `khal` for data. In order to use the calendar modules, you need
+to first [install khal](https://github.com/pimutils/khal). If you follow the instructions there,
+you'll be able to connect to CalDAV servers, such as Google Calendar.
 
 ### Summary of your day
 
