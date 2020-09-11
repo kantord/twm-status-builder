@@ -6,7 +6,7 @@ The calendar modules rely on `khal` for data.
 
 ### Summary of your day
 
-*module name*: calendar_summary
+*module name*: calendar/summary
 
 Provides a visual summary of your day using emoji. Each emoji represents a half-hour block,
 for for example a one-hour meeting will be represented by `📅📅`. Any half hour block with a
@@ -24,14 +24,14 @@ Legend:
 
 *output example*:
 
-`⏰🟩🟩🟩🟩🟩🟩📅🟦🟦🟦🚀🍴🍴🟦📅📅📅📅📅📅🟦🟦🟩🟩🟩🟩🟩🟩🟩🟩🟩💤`
+⏰🟩🟩🟩🟩🟩🟩📅🟦🟦🟦🚀🍴🍴🟦📅📅📅📅📅📅🟦🟦🟩🟩🟩🟩🟩🟩🟩🟩🟩💤
 
 ### Summary of ongoing and upcoming events
 
-*module name*: calendar_upcoming
+*module name*: calendar/upcoming
 
 Provides a summary of ongoing and up
 
 *output example*:
 
-`📅 In 51m: Dev standup`
+📅 In 51m: Dev standup
