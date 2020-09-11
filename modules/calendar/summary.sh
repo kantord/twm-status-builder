@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
+source ~/.status-one-liner-rc
+
 day_summary=""
 EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/" | grep -v "^;"`
-let FIRST_HOUR=7
-let LAST_HOUR=23
-let START="2*FIRST_HOUR"
-let END="2*LAST_HOUR"
-let WORK_START="2*10"
-let WORK_END="2*18"
-let LUNCH_BREAK_START="2*13"
-let LUNCH_BREAK_END="LUNCH_BREAK_START + 2"
+
 HOUR=`date +"%H" | sed 's/^0//'`
 MINUTE=`date +"%M" |sed  's/^0//'`
 let CURRENT_TIME="2*HOUR+1"
