@@ -5,9 +5,11 @@ MODULES=$(dirname $0)/modules
 active_modules=$(echo "$1" | tr ',' '\n')
 
 function execute_modules() {
-	for module_name in $active_modules
+	for module_description in $active_modules
 	do
-		cat <($MODULES/$module_name.sh)
+		module_name=$(echo $module_description | cut -f1 -d':')
+		module_arg=$(echo $module_description | cut -f2 -d':')
+		cat <($MODULES/$module_name.sh $module_arg)
 	done
 }
 
