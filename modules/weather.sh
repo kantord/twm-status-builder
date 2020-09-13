@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-curl -s wttr.in/{$1}?format=3
+cities=$(echo $1 | tr '_' ' ')
+
+curl -s "wttr.in/$cities?format=3"

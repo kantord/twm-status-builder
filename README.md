@@ -19,7 +19,7 @@ a non-empty output will be displayed. Example:
 
 See the documentation for each module to see the required configuration.
 
-List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro)
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather)
 
 ### Usage with polybar
 
@@ -105,3 +105,9 @@ In order to use this module, please set up
 `🍅 Pomodoro 23:47`
 
 
+### Weather
+
+**module_name**: `weather:{city}`
+
+This module shows weather information about a given city, for example `weather:London` or `weather:Berlin`.
+Cities with spaces in their name can be spelled like so: `weather:New_York`.
