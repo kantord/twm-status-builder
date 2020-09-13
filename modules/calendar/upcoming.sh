@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+cache_id=$(echo "sol_calendar_upcoming_$(( $(date +%s) / 30 ))" | md5sum | head -n1 | cut -f1 -d' ')
+cache_file="/tmp/$cache_id"
+
+if test -f "$cache_file"; then
+	cat $cache_file
+fi
+
+
+
 next_event_line=`khal list --notstarted now -f "{start-date};={start-time};{title}"  | grep -v "No meetings day /blocker/" | grep = | grep -v ";=;" | head -n1 | sed 's ;= ; ' | sed 's/;/ /'`
 next_event_datetime=`echo $next_event_line | cut -f1 -d";"`
 next_event_title=`echo $next_event_line | sed 's/\[regular\]$//' | cut -f2 -d";" | cut -c -30`
@@ -17,4 +26,6 @@ now_title=`echo $now_line | cut -f2 -d";" | cut -c -30 | sed 's/$/  /' | sed 's/
 next_summary=`echo "📅 In $time_difference_formatted:" $next_event_title | sed 's/.*[0-9][0-9]\+h.*//' | grep -v "\-[0-9']\+h"`
 calendar_summary=`echo "$now_title""$next_summary"`
 
-echo $calendar_summary
+echo $calendar_summary > $cache_file
+
+cat $cache_file

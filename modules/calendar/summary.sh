@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+cache_id=$(echo "sol_calendar_summary_$(( $(date +%s) / 180 ))" | md5sum | head -n1 | cut -f1 -d' ')
+cache_file="/tmp/$cache_id"
+
+if test -f "$cache_file"; then
+	cat $cache_file
+fi
+
+
 let FIRST_HOUR=7
 let LAST_HOUR=23
 let START="2*FIRST_HOUR"
@@ -84,4 +92,5 @@ do
 	day_summary="$day_summary$time_symbol"
 done
 
-echo $day_summary
+echo $day_summary > $cache_file
+cat $cache_file
