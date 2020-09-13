@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+let FIRST_HOUR=7
+let LAST_HOUR=23
+let START="2*FIRST_HOUR"
+let END="2*LAST_HOUR"
+let WORK_START="2*10"
+let WORK_END="2*18"
+let LUNCH_BREAK_START="2*13"
+let LUNCH_BREAK_END="LUNCH_BREAK_START + 2"
+
 source ~/.status-one-liner-rc
 
 day_summary=""
