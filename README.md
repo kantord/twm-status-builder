@@ -111,3 +111,8 @@ In order to use this module, please set up
 
 This module shows weather information about a given city, for example `weather:London` or `weather:Berlin`.
 Cities with spaces in their name can be spelled like so: `weather:New_York`.
+
+**output example**:
+
+`New York: ☁️ +18°C`
+
