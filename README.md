@@ -32,6 +32,16 @@ exec = status-one-liner.sh pomodoro,calendar/upcoming,calendar/summary
 interval = 0.5
 ```
 
+### Cycling through multiple modules
+
+If you have modules that could produce important information at the same time, you can cycle through
+them. Use this feature sparingly, as it can be distracting. To cycle between modules, prepend each
+module with a `>` character. Example:
+
+```
+./status-one-liner.sh pomodoro,>calendar/upcoming,>calendar/summary
+```
+
 ## Modules
 
 ### Calendar
