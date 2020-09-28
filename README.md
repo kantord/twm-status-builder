@@ -19,7 +19,7 @@ a non-empty output will be displayed. Example:
 
 See the documentation for each module to see the required configuration.
 
-List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/due](#taskwarrior)
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries)
 
 ### Usage with polybar
 
@@ -128,10 +128,22 @@ Cities with spaces in their name can be spelled like so: `weather:New_York`.
 
 ### Taskwarrior
 
-**module_name**: `task/due`
+#### Count
+
+**module_name**: `task/count`
 
 This module shows the count of (over) due tasks in taskwarrior.
 
 **output example**:
 
 `11 tasks due`
+
+#### Strawberries
+
+**module_name**: `task/strawberries`
+
+This module shows the count of (over) due tasks in taskwarrior, represented as `🍓` characters.
+
+**output example**:
+
+`🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓`
