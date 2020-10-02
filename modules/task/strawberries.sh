@@ -5,6 +5,7 @@ cache_file="/tmp/$cache_id"
 
 if test -f "$cache_file"; then
 	cat $cache_file
+	exit 0
 fi
 
 printf '%*s' $(task overdue | tail -n1 | cut -f1 -d' ') | sed 's/ /🍓/g' > $cache_file
