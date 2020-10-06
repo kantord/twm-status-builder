@@ -8,7 +8,10 @@ if test -f "$cache_file"; then
 	exit 0
 fi
 
-printf '%*s' $(task overdue | tail -n1 | cut -f1 -d' ') | sed 's/ /🍓/g' > $cache_file
-echo ""
+printf '%*s' $(task overdue 2>/dev/null | tail -n1 | cut -f1 -d' ') | sed 's/ /🍓/g' > $cache_file 
+
+echo "" >> $cache_file
+echo "🥔" >> $cache_file
+
 cat $cache_file
 
