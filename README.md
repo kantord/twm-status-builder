@@ -19,7 +19,8 @@ a non-empty output will be displayed. Example:
 
 See the documentation for each module to see the required configuration.
 
-List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries)
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries), [task/emojis](#emojis)
+
 
 ### Usage with polybar
 
@@ -147,3 +148,15 @@ This module shows the count of (over) due tasks in taskwarrior, represented as `
 **output example**:
 
 `🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓🍓`
+
+#### Emojis
+
+**module_name**: `task/emojis`
+
+This module shows the count of (over) due tasks in taskwarrior, each task represented
+by an emoji that corresponds to its project. For this to work, you need to
+set your project names to emoji.
+
+**output example**:
+
+`🏢🧹💪🛌`
