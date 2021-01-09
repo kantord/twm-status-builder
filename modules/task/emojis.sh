@@ -8,7 +8,7 @@ if test -f "$cache_file"; then
 	exit 0
 fi
 
-task overdue 2> /dev/null | sed 1,3d | head -n -1 | grep -v "^$" | grep -v "^     " | sed 's/^ *[0-9]\+ [0-9]\+[a-z] \? \? \? \?//' | cut -c-6 | sed 's/ */ /' | sed 's/^ *//' | sed 's/ *$//' | sed 's/^$/🍓/' | tr -d '\n\r' > $cache_file
+task overdue 2> /dev/null | sed 1,3d | head -n -1 | grep -v "^$" | grep -v "^     " | sed 's/^ *[0-9]\+ [0-9]\+[a-z] \? \? \? \?//' | cut -c-6 | sed 's/ */ /' | sed 's/^ *//' | sed 's/ *$//' | sed 's/^$/🍓/' | tr -d '\n\r' | sed 's/$/\n/' > $cache_file
 
 echo "" >> $cache_file
 echo "🥔" >> $cache_file

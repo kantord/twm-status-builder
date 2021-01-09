@@ -139,6 +139,15 @@ This module shows the count of (over) due tasks in taskwarrior.
 
 `11 tasks due`
 
+**module_name**: `task/count_icon`
+
+Same as `task/count`, but with an icon. Needs [nerd fonts](https://www.nerdfonts.com/).
+
+**output example**:
+
+`陼11`
+
+
 #### Strawberries
 
 **module_name**: `task/strawberries`

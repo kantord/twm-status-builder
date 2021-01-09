@@ -24,4 +24,5 @@ function execute_modules() {
 	done
 }
 
-execute_modules | grep -v '^$' | head -n1
+
+execute_modules | awk 'NF' | head -n1
