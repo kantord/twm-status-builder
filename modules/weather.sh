@@ -9,5 +9,5 @@ if test -f "$cache_file"; then
 	exit 0
 fi
 
-curl -s "wttr.in/$cities?format=3" -o "$cache_file"
+curl -s "wttr.in/$cities?format=3" -o "$cache_file" --max-time 0.25
 cat $cache_file
