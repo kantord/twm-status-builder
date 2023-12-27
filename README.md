@@ -2,7 +2,9 @@
 
 ![screenshot](screenshot.png)
 
-See (only) the most relevant information in your status bar.
+`twm-status-builder` is a script that helps you compile succint information as text to be displayed
+in the status bar of your (tiling) window manager. Should work with any status bar that is able to
+display text from a shell script. Might also be used in your terminal.
 
 ## Usage
 
