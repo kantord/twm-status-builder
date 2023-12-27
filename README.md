@@ -12,8 +12,8 @@ display text from a shell script. Might also be used in your terminal.
 ./twm-status-builder.sh [modules]
 ```
 
-You have to supply a comma-separated list of modules to display. To first module to have
-a non-empty output will be displayed. Example:
+You have to supply a comma-separated list of modules to display. **The first module to have
+a non-empty output will be displayed**. Example:
 
 ```
 ./twm-status-builder.sh pomodoro,calendar/upcoming,calendar/summary
