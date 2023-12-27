@@ -1,4 +1,4 @@
-# status-one-liner
+# twm-status-builder
 
 ![screenshot](screenshot.png)
 
