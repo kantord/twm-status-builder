@@ -18,7 +18,7 @@ let WORK_END="2*18"
 let LUNCH_BREAK_START="2*13"
 let LUNCH_BREAK_END="LUNCH_BREAK_START + 2"
 
-source ~/.status-one-liner-rc
+source ~/.twm-status-builder-rc
 
 day_summary=""
 EVENTS_TODAY=`khal list today -f "{start-date};={start-time};{end-time};{title}" | sed '/Tomorrow/q' | grep "=" | cut -f2 -d"=" | grep -v "No meetings day /blocker/" | grep -v "^;"`

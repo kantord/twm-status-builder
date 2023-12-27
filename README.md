@@ -7,14 +7,14 @@ See (only) the most relevant information in your status bar.
 ## Usage
 
 ```
-./status-one-liner.sh [modules]
+./twm-status-builder.sh [modules]
 ```
 
 You have to supply a comma-separated list of modules to display. To first module to have
 a non-empty output will be displayed. Example:
 
 ```
-./status-one-liner.sh pomodoro,calendar/upcoming,calendar/summary
+./twm-status-builder.sh pomodoro,calendar/upcoming,calendar/summary
 ```
 
 See the documentation for each module to see the required configuration.
@@ -29,7 +29,7 @@ Example:
 ```
 [module/status_one_liner]
 type = custom/script
-exec = status-one-liner.sh pomodoro,calendar/upcoming,calendar/summary
+exec = twm-status-builder.sh pomodoro,calendar/upcoming,calendar/summary
 interval = 0.5
 ```
 
@@ -40,7 +40,7 @@ them. Use this feature sparingly, as it can be distracting. To cycle between mod
 module with a `>` character. Example:
 
 ```
-./status-one-liner.sh pomodoro,>calendar/upcoming,>calendar/summary
+./twm-status-builder.sh pomodoro,>calendar/upcoming,>calendar/summary
 ```
 
 ## Modules
@@ -60,7 +60,7 @@ for for example a one-hour meeting will be represented by `📅📅`. Any half h
 meeting will be represented with `📅`, even if the meeting starts in the middle of the half
 hour block.
 
-Put the following configuration into your `.status-one-liner-rc`:
+Put the following configuration into your `.twm-status-builder-rc`:
 
 ```
 let FIRST_HOUR=7
