@@ -21,7 +21,8 @@ a non-empty output will be displayed**. Example:
 
 See the documentation for each module to see the required configuration.
 
-List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries), [task/emojis](#emojis), [bluetooth/headphones](#headphones)
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries), [task/emojis](#emojis), [battery/headphones](#headphones), [battery/laptop](#laptop-battery)
+
 
 
 ### Usage with polybar
@@ -175,7 +176,7 @@ set your project names to emoji.
 
 #### Headphones
 
-**module_name**: `bluetooth/headphones`
+**module_name**: `battery/headphones`
 
 This module shows the battery level of your bluetooth headphones as long as they are
 connected and as long as this feature is supported in `upower` for your headphones.
@@ -183,3 +184,14 @@ connected and as long as this feature is supported in `upower` for your headphon
 **output example**:
 
 `🎧 70%`
+
+#### Laptop battery
+
+**module_name**: `battery/laptop`
+
+This module shows the battery level of your laptop as long as there is a
+battery installed.
+
+**output example**:
+
+`💻 70%`

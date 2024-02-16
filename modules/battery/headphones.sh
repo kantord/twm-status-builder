@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cache_id=$(echo "bluetoot_headphones_battery_$(( $(date +%s) / 30 ))" | md5sum | head -n1 | cut -f1 -d' ')
+cache_id=$(echo "bluetooth_headphones_battery_$(( $(date +%s) / 30 ))" | md5sum | head -n1 | cut -f1 -d' ')
 cache_file="/tmp/$cache_id"
 
 if test -f "$cache_file"; then
