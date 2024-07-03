@@ -21,7 +21,7 @@ a non-empty output will be displayed**. Example:
 
 See the documentation for each module to see the required configuration.
 
-List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries), [task/emojis](#emojis), [battery/headphones](#headphones), [battery/laptop](#laptop-battery)
+List of currently available modules: [calendar/summary](#summary-of-your-day), [calendar/upcoming](#summary-of-ongoing-and-upcoming-events), [pomodoro](#pomodoro), [weather](#weather), [task/count](#count), [task/strawberries](#strawberries), [task/emojis](#emojis), [battery/headphones](#headphones), [battery/laptop](#laptop-battery), [battery/controller](#controller-battery)
 
 
 
@@ -195,3 +195,17 @@ battery installed.
 **output example**:
 
 `💻 70%`
+
+
+#### Controller battery
+
+**module_name**: `battery/controllers`
+
+This module shows the battery level of your bluetooth controllers as long as they are
+connected and as long as this feature is supported in `upower` for your controllers.
+
+**output example**:
+
+`🎮 70%`
+
+
