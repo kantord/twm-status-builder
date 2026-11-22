@@ -1,3 +1,8 @@
+> [!TIP]
+> Unmaintained, replaced by a more generic solution, check out [Tauler](https://github.com/kantord/tauler)!
+
+
+
 # twm-status-builder
 
 ![screenshot](screenshot.png)
